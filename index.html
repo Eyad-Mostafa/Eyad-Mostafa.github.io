@@ -1,20 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eyad Mostafa - Portfolio</title>
-</head>
-<body>
-    <h1>Eyad Mostafa</h1>
-    <p>Backend Developer | ASP.NET Core | C#</p>
-    <h2>Projects</h2>
-    <ul>
-        <li><a href="https://github.com/Eyad-Mostafa/Coding-Tracker">Coding Time Tracker</a></li>
-        <li><a href="https://github.com/Eyad-Mostafa/Pathology-Lab-System">Pathology Lab System</a></li>
-    </ul>
-    <h2>Contact</h2>
-    <p>Email: your_email@example.com</p>
-    <p><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></p>
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f4f4f4;
+      }
+      .hero {
+        background: linear-gradient(to right, #4a90e2, #145da0);
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+      .btn-resume {
+        background-color: #ffd700;
+        color: black;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+      .btn-resume:hover {
+        background-color: #e6c200;
+      }
+      .section {
+        padding: 60px 0;
+      }
+      .work-item {
+        margin-bottom: 30px;
+      }
+      .work-item h4 {
+        font-weight: bold;
+      }
+      .footer {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Eyad Mostafa</h1>
+        <p>Backend Developer | ASP.NET Core | C#</p>
+        <a
+          href="Resume/Eyad-Mostafa-Software-Engineer.pdf"
+          download
+          class="btn-resume"
+          >Download Resume <i class="fas fa-download"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="container section text-center">
+      <h2>About Me</h2>
+      <p>
+        I am a backend developer specializing in ASP.NET Core, EF Core, and SQL
+        Server. Passionate about clean code and scalable architectures.
+      </p>
+    </section>
+
+    <!-- My Work -->
+    <section class="container section">
+      <h2 class="text-center">My Work</h2>
+      <div class="row">
+        <div class="col-md-6 work-item">
+          <h4>Shifts Logger</h4>
+          <p>
+            Web API for tracking employee shifts, including clock-in/clock-out
+            functionality.
+          </p>
+          <a
+            href="https://github.com/Eyad-Mostafa/ShiftsLogger"
+            target="_blank"
+            class="btn btn-primary"
+            >View on GitHub</a
+          >
+        </div>
+        <div class="col-md-6 work-item">
+          <h4>Exercise Tracker</h4>
+          <p>
+            REST API for logging and tracking exercise sessions with duration,
+            type, and intensity.
+          </p>
+          <a
+            href="https://github.com/Eyad-Mostafa/ExerciseTracker"
+            target="_blank"
+            class="btn btn-primary"
+            >View on GitHub</a
+          >
+        </div>
+        <div class="col-md-6 work-item">
+          <h4>Phonebook App</h4>
+          <p>Console-based contact management system with CRUD operations.</p>
+          <a
+            href="https://github.com/Eyad-Mostafa/PhoneBook"
+            target="_blank"
+            class="btn btn-primary"
+            >View on GitHub</a
+          >
+        </div>
+        <div class="col-md-6 work-item">
+          <h4>Drinks Info API</h4>
+          <p>
+            Console UI for restaurant employees to fetch drink data via an
+            external API.
+          </p>
+          <a
+            href="https://github.com/Eyad-Mostafa/Drinks-Info"
+            target="_blank"
+            class="btn btn-primary"
+            >View on GitHub</a
+          >
+        </div>
+        <div class="col-md-6 work-item">
+          <h4>Pathology Lab System</h4>
+          <p>GUI-based system for managing patient profiles and test data.</p>
+          <a
+            href="https://github.com/Eyad-Mostafa/PathologyLabSystem"
+            target="_blank"
+            class="btn btn-primary"
+            >View on GitHub</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="container section text-center">
+      <h2>Contact</h2>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="mailto:eyadmostafa464@gmail.com" class="btn btn-outline-dark">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+        <a
+          class="btn btn-primary"
+          href="https://www.linkedin.com/in/eyadmostafa/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a
+          class="btn btn-dark"
+          href="https://github.com/Eyad-Mostafa"
+          target="_blank"
+        >
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Eyad Mostafa. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
